@@ -35,41 +35,50 @@ const Hero = ({ phoneNumber }) => {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-14 sm:pt-28"
+      className="relative flex min-h-[100vh] items-center justify-center overflow-hidden pt-14 sm:pt-20 lg:pt-24"
     >
-      <div className="absolute inset-0 bg-gradient-to-t from-[#fff]/95 via-[#fff]/82 to-[#fff]/45 z-10" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#fff]/95 via-[#fff]/82 to-[#fff]/45" />
+
       <div
         style={{ backgroundImage: `url(${ImageHero})` }}
-        className="absolute inset-0 bg-cover bg-no-repeat bg-center opacity-60"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
       />
+
       <div
         ref={heroGlowRef}
-        className="pointer-events-none absolute -bottom-20 right-[-40px] w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-tr from-yellow-300 via-amber-400 to-orange-500 blur-3xl opacity-60"
+        className="pointer-events-none absolute -bottom-20 right-[-40px] h-64 w-64 rounded-full bg-gradient-to-tr from-yellow-300 via-amber-400 to-orange-500 blur-3xl opacity-60 md:h-80 md:w-80"
       />
-      <div className="relative h-screen top-20 z-20 text-center px-4 justify-around sm:px-6 max-w-4xl mx-auto">
-        <span className="hero-kicker inline-flex items-center justify-around gap-3 luxury-kicker mb-5 sm:mb-6">
-          <span className="h-px w-8 sm:w-10 bg-amber-400/70" />
-          coleção que valoriza sua presença
-          <span className="h-px w-8 sm:w-10 bg-amber-400/70" />
+
+      <div className="relative z-20 mx-auto flex min-h-[100vh] w-full max-w-4xl flex-col items-center justify-center px-4 text-center sm:px-6">
+        <span className="hero-kicker mb-5 inline-flex flex-wrap items-center justify-center gap-3 luxury-kicker sm:mb-6">
+          <span className="h-px w-8 bg-amber-400/70 sm:w-10" />
+          <span className="text-center">coleção que valoriza sua presença</span>
+          <span className="h-px w-8 bg-amber-400/70 sm:w-10" />
         </span>
 
-        <h2 className="text-[3rem] italic mb-8 sm:text-[4.4rem] lg:text-[5.8rem] font-semibold text-center text-[#DDAF17] leading-[0.95] tracking-tight">
-          <ShinyText text="Joias que Inspiram" speed={6} />
+        <h2 className="mb-8 text-center text-[3rem] font-semibold italic leading-[0.95] tracking-tight text-[#DDAF17] sm:text-[4.4rem] lg:text-[5.8rem]">
+          <span className="flex justify-center text-center">
+            <ShinyText text="Joias que Inspiram" speed={6} />
+          </span>
         </h2>
 
-        <div className="flex mt-10 flex-col sm:flex-row gap-4 sm:gap-5 pt-2 justify-center items-center">
+        <div className="flex w-full flex-col items-center justify-center pt-1">
           <a
             href="#colecoes"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 sm:px-10 py-4 text-base sm:text-lg font-medium text-yellow-700 border border-yellow-500/30 bg-white/75 backdrop-blur-sm rounded-full hover:bg-yellow-50 hover:border-yellow-500 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-yellow-500/30 bg-white/75 px-8 py-4 text-base font-medium text-yellow-700 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-50 hover:shadow-md sm:w-auto sm:px-10 sm:text-lg"
           >
             <span>Explorar coleções</span>
-            <FiArrowDown className="text-lg animate-bounce" style={{ animationDuration: "2s" }} />
+            <FiArrowDown
+              className="animate-bounce text-lg"
+              style={{ animationDuration: "2s" }}
+            />
           </a>
-        </div>
 
-        <p className="mt-5 text-sm sm:text-base text-stone-500">
-          Atendimento próximo, peças selecionadas e ajuda para escolher o modelo ideal.
-        </p>
+          <p className="mt-5 max-w-2xl text-center text-sm text-stone-500 sm:mt-6 sm:text-base">
+            Atendimento próximo, peças selecionadas e ajuda para escolher o
+            modelo ideal.
+          </p>
+        </div>
       </div>
     </section>
   );
