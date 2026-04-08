@@ -1,0 +1,15 @@
+{
+  "short_name": "Soline",
+  "name": "Catálogo Soline Semijoias",
+  "icons": [
+    {
+      "src": "logo-soline.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FFE580",
+  "background_color": "#ffffff"
+}

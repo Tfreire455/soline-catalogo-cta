@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://soline-catalogo.vercel.app/sitemap.xml
