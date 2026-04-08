@@ -81,7 +81,7 @@ const Header = ({ phoneNumber }) => {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white/97 backdrop-blur-md absolute top-full left-0 right-0 py-4 px-4 shadow-[0_16px_30px_rgba(0,0,0,0.12)] border-b border-stone-200">
+        <div className="md:hidden bg-white/90 backdrop-blur-md absolute top-full left-0 right-0 py-4 px-4 shadow-[0_16px_30px_rgba(0,0,0,0.12)] border-b border-stone-200">
           <div className="flex flex-col space-y-3 text-[15px] text-stone-700">
             <a
               href="#destaques"
