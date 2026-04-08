@@ -23,10 +23,10 @@ const Hero = ({ phoneNumber }) => {
 
     if (heroGlowRef.current) {
       gsap.to(heroGlowRef.current, {
-        scale: 1.08,
-        duration: 6,
+        scale: 1.01,
+        duration: 3,
         repeat: -1,
-        yoyo: true,
+        yoyo: false,
         ease: "sine.inOut",
       });
     }
@@ -74,7 +74,7 @@ const Hero = ({ phoneNumber }) => {
             />
           </a>
 
-          <p className="mt-5 max-w-2xl text-center text-sm text-stone-500 sm:mt-6 sm:text-base">
+          <p className="mt-10 max-w-2xl text-center text-sm text-stone-500 sm:mt-6 sm:text-base">
             Atendimento próximo, peças selecionadas e ajuda para escolher o
             modelo ideal.
           </p>
