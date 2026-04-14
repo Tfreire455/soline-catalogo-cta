@@ -74,7 +74,7 @@ const Hero = ({ phoneNumber }) => {
             />
           </a>
 
-          <p className="mt-15 max-w-2xl text-center text-sm text-stone-500 sm:mt-6 sm:text-base">
+          <p className="mt-15 max-w-2xl text-center text-sm text-stone-500 sm:mt-10 sm:text-base">
             Atendimento próximo, peças selecionadas e ajuda para escolher o
             modelo ideal.
           </p>
