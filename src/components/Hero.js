@@ -11,7 +11,7 @@ const Hero = ({ phoneNumber }) => {
 
   useEffect(() => {
     if (heroRef.current) {
-      gsap.from(heroRef.current.querySelectorAll("h2, p, a, .hero-kicker"), {
+      gsap.from(heroRef.current.querySelectorAll("h2, .hero-kicker"), {
         opacity: 100,
         y: 36,
         duration: 1,
