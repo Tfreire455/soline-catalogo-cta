@@ -62,7 +62,7 @@ const Hero = ({ phoneNumber }) => {
           </span>
         </h2>
 
-        <div className="flex w-full flex-col items-center justify-center pt-1">
+        <div className="flex w-full flex-col items-center justify-center gap-3 pt-1">
           <a
             href="#colecoes"
             className="inline-flex w-full mb-6 items-center justify-center gap-2 rounded-full border border-yellow-500/30 bg-white/75 px-8 py-4 text-base font-medium text-yellow-700 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-50 hover:shadow-md sm:w-auto sm:px-10 sm:text-lg"
@@ -74,7 +74,7 @@ const Hero = ({ phoneNumber }) => {
             />
           </a>
 
-          <p className="mt-15 max-w-2xl text-center text-sm text-stone-500 sm:mt-10 sm:text-base">
+          <p className="mt-15  max-w-2xl text-center text-sm text-stone-500 sm:mt-10 sm:text-base">
             Atendimento próximo, peças selecionadas e ajuda para escolher o
             modelo ideal.
           </p>
