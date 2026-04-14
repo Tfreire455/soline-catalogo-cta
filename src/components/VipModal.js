@@ -167,7 +167,7 @@ const VipModal = ({ botApiUrl }) => {
 
     try {
       const targetUrl =
-        botApiUrl || process.env.REACT_APP_URL_BOT || "http://localhost:3000";
+        botApiUrl || process.env.REACT_APP_URL_BOT;
 
       const response = await fetch(`${targetUrl}/api/vip/cadastro`, {
         method: "POST",
